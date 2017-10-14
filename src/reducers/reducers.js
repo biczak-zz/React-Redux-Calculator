@@ -16,7 +16,7 @@ console.log()
   if (action.type === 'INPUT_NUMBER') {
     // Check to remove any leading Zeroes.
     console.log(state.displayValue.toString().split('')[0]);
-    if (state.displayValue.toString().split('')[0] === '0') {
+    if (state.displayValue.toString().split('')[0] === '0' || state.previousValue !== 0) {
       return {
         ...state,
         displayValue: action.payload,

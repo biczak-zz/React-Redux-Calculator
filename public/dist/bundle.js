@@ -24426,12 +24426,12 @@ var calculatorReducers = function calculatorReducers() {
 
   // Parser() will allow us to read Strings as Mathematical Expressions.
   var parser = new _exprEval.Parser();
-
+  console.log();
   // For Number Buttons
-  if (action.type === actionTypes.INPUT_NUMBER) {
+  if (action.type === 'INPUT_NUMBER') {
     // Check to remove any leading Zeroes.
     console.log(state.displayValue.toString().split('')[0]);
-    if (state.displayValue.toString().split('')[0] === '0') {
+    if (state.displayValue.toString().split('')[0] === '0' || state.previousValue !== 0) {
       return _extends({}, state, {
         displayValue: action.payload,
         result: state.result + action.payload
