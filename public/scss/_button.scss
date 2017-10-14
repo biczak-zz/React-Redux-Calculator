@@ -1,0 +1,45 @@
+#button-container {
+  @include dimensions(100%, 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator-button {
+  @include dimensions(99%, 99%);
+  background: $grey;
+  font-size: 16px;
+  border: 1px solid $dark;
+  border-radius: 10px;
+}
+.operator-button {
+  @include dimensions(99%, 99%);
+  background: $orange;
+  color: $white;
+  font-size: 16px;
+  border: 1px solid $dark;
+  border-radius: 10px;
+}
+.memory-button {
+  @include dimensions(99%, 99%);
+  background: $dark-grey;
+  color: $white;
+  font-size: 16px;
+  border: 1px solid $dark;
+  border-radius: 10px;
+}
+.clear-button {
+  @include dimensions(99%, 99%);
+  background: $red;
+  color: $white;
+  font-size: 16px;
+  border: 1px solid $dark;
+  border-radius: 10px;
+}
+.equals-button {
+  @include dimensions(99%, 99%);
+  background: $green;
+  font-size: 16px;
+  border: 1px solid $dark;
+  border-radius: 10px;
+}

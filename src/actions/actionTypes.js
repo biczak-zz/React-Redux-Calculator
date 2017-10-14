@@ -1,0 +1,12 @@
+export const INPUT_NUMBER = 'INPUT_NUMBER';
+export const ADD = 'ADD';
+export const SUBTRACT = 'SUBTRACT';
+export const MULTIPLY = 'MULTIPLY';
+export const DIVIDE = 'DIVIDE';
+export const EQUALS = 'EQUALS';
+export const POSITIVE_NEGATIVE = 'POSITIVE_NEGATIVE';
+export const MEMORY_ADD = 'MEMORY_ADD';
+export const MEMORY_SUBTRACT = 'MEMORY_SUBTRACT';
+export const MEMORY_CLEAR = 'MEMORY_CLEAR';
+export const MEMORY_RECALL = 'MEMORY_RECALL';
+export const CLEAR = 'CLEAR';
