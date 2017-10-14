@@ -11,11 +11,12 @@ const initialState = {
 const calculatorReducers = (state = initialState, action) => {
   // Parser() will allow us to read Strings as Mathematical Expressions.
   const parser = new Parser();
-
+console.log()
   // For Number Buttons
-  if (action.type === actionTypes.INPUT_NUMBER) {
+  if (action.type === 'INPUT_NUMBER') {
     // Check to remove any leading Zeroes.
-    if (state.displayValue.toString().split('')[0] === '0' || !Number(state.result.charAt(state.result.length - 1))) {
+    console.log(state.displayValue.toString().split('')[0]);
+    if (state.displayValue.toString().split('')[0] === '0') {
       return {
         ...state,
         displayValue: action.payload,
